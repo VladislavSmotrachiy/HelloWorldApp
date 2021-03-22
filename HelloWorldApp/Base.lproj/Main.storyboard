@@ -23,27 +23,43 @@
                                 <color key="textColor" systemColor="systemGray5Color"/>
                                 <color key="highlightedColor" systemColor="labelColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjh-OC-5tg">
-                                <rect key="frame" x="82" y="657" width="250" height="52"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="qSN-xd-kK4">
+                                <rect key="frame" x="82" y="581" width="250" height="126"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjh-OC-5tg">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="52"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <state key="normal" title="Show Text">
+                                            <color key="titleColor" systemColor="systemGray5Color"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWt-hZ-BBU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVN-XG-0f2">
+                                        <rect key="frame" x="0.0" y="74" width="250" height="52"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <state key="normal" title="Do Somthing">
+                                            <color key="titleColor" systemColor="systemGray5Color"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gx7-XL-le5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="iWn-Wt-P7g"/>
+                                    <constraint firstAttribute="width" constant="250" id="fX0-ng-80N"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <state key="normal" title="Show Text">
-                                    <color key="titleColor" systemColor="systemGray5Color"/>
-                                </state>
-                                <connections>
-                                    <action selector="showButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWt-hZ-BBU"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="xjh-OC-5tg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HDE-tr-2NJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xjh-OC-5tg" secondAttribute="bottom" constant="153" id="LK6-c1-bs1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qSN-xd-kK4" secondAttribute="bottom" constant="155" id="HNU-z2-C1K"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="voy-kR-xp6" secondAttribute="trailing" constant="121" id="NJS-PY-fJi"/>
+                            <constraint firstItem="qSN-xd-kK4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QvM-rd-8Kv"/>
                             <constraint firstItem="voy-kR-xp6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="Rtv-wj-hHQ"/>
                             <constraint firstItem="voy-kR-xp6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="oc8-ZB-OjX"/>
                         </constraints>
